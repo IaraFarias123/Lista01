@@ -1,0 +1,9 @@
+import java.util.Scanner;
+
+public class Questao01 {
+
+public static void main() {
+System.out.println("Eu já sei programar");
+    
+}
+}
