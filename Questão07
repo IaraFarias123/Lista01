@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Questão07 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita ao usuário que insira as medidas dos lados do terreno
+        System.out.print("Digite o comprimento do terreno (em metros): ");
+        double comprimento = scanner.nextDouble();
+
+        System.out.print("Digite a largura do terreno (em metros): ");
+        double largura = scanner.nextDouble();
+
+        // Calcula o perímetro (metros de muro necessários)
+        double perimetro = 2 * (comprimento + largura);
+
+        // Calcula a área do terreno
+        double area = comprimento * largura;
+
+        // Calcula o valor do IPTU (R$ 0,29 por metro quadrado)
+        double valorIPTU = area * 0.29;
+
+        // Exibe os resultados
+        System.out.println("Perímetro (metros de muro necessários): " + perimetro + " metros");
+        System.out.println("Área do terreno: " + area + " metros quadrados");
+        System.out.println("Valor do IPTU: R$ " + valorIPTU);
+    }
+}
