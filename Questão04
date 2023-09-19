@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Questao04 {
+    
+    public static void main () {
+ Scanner scanner = new Scanner(System.in);
+ 
+System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+        
+//Calcule o antecessor e o sucessor
+        int antecessor = numero - 1;
+        int sucessor = numero + 1;
+        
+//Exibe o antecessor e o sucessor
+        System.out.println("Antecessor: " + antecessor);
+        System.out.println("Número digitado: " + numero);
+        System.out.println("Sucessor: " + sucessor);
+    }
+}
